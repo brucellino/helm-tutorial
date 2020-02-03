@@ -1,2 +1,4 @@
 ---
-favouriteDrink: coffee
+favourite:
+  drink: coffee
+  food: tacos
