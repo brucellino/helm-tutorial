@@ -7,5 +7,6 @@ data:
   myvalue: "Hello World"
   drink: {{ .Values.favourite.drink | default  "tea" |quote }}
   food: {{ .Values.favourite.food | upper | quote }}
-  {{- if eq .Values.favourite.drink "coffee" -}}
-  mug: true{{- end -}}
+  {{- if eq .Values.favourite.drink "coffee" }}
+  mug: true
+  {{- end -}}
