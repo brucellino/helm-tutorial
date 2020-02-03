@@ -2,3 +2,8 @@
 favourite:
   drink: coffee
   food: tacos
+pizzaToppings:
+  - mushrooms
+  - cheese
+  - peppers
+  - onions

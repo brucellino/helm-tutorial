@@ -10,5 +10,9 @@ data:
   food: {{ .food | upper | quote }}
   {{- if eq .drink "coffee" }}
   mug: true
-  {{- end -}}
-  {{- end -}}
+  {{- end }}
+  {{- end }}
+  toppings: |-
+    {{- range .Values.pizzaToppings }}
+    - {{ . | title | quote }}
+    {{- end }}
